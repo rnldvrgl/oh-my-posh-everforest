@@ -60,17 +60,22 @@
           },
           "template": " {{ if gt .Code 0 }}✘ {{ else }}\udb81\udc5e {{ end }}{{ if eq ( gt .Code 0 ) .Segments.Path.Writable}} {{ end }}"
         },
-        {
+{
   "type": "python",
-  "style": "plain",
-  "foreground": "p:everforest_yellow",
+  "style": "powerline",
+  "background": "#dbbc7f",            
+  "foreground": "#111111",             
+  "powerline_symbol": "\ue0b0",
   "properties": {
-    "display_mode": "context", 
-    "prefix": "🐍 ",
+    "display_mode": "environment",
     "show_virtual_env": true,
+    "fetch_virtual_env": true,
+    "home_enabled": true,
     "cache_duration": "none"
-  }
+  },
+  "template": " \ue235 {{ if .Venv }}({{ .Venv }}){{ end }} "
 }
+
       ]
     },
     {
