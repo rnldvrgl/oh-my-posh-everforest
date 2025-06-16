@@ -60,19 +60,17 @@
           },
           "template": " {{ if gt .Code 0 }}✘ {{ else }}\udb81\udc5e {{ end }}{{ if eq ( gt .Code 0 ) .Segments.Path.Writable}} {{ end }}"
         },
-{
-  "type": "python",
-  "style": "plain",
-  "foreground": "#e69875",           
-  "properties": {
-    "display_mode": "environment",
-    "fetch_virtual_env": true,
-    "cache_duration": "none"
-  },
-  "template": " ({{ .Venv }}) "
-}
-
-
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#e69875", 
+          "properties": {
+            "display_mode": "environment",
+            "fetch_virtual_env": true,
+            "cache_duration": "none"
+          },
+          "template": " \uE235 {{ .Venv }} "
+        }
       ]
     },
     {
