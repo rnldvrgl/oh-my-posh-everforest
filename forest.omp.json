@@ -59,7 +59,20 @@
             "cache_duration": "none"
           },
           "template": " {{ if gt .Code 0 }}✘ {{ else }}\udb81\udc5e {{ end }}{{ if eq ( gt .Code 0 ) .Segments.Path.Writable}} {{ end }}"
-        }
+        },
+        {
+  "type": "python",
+  "style": "plain",
+  "foreground": "p:everforest_yellow",
+  "properties": {
+    "display_mode": "context", 
+    "prefix": "🐍 ",
+    "show_virtual_env": true,
+    "cache_duration": "none"
+  }
+}
+
+}
       ]
     },
     {
