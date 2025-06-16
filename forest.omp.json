@@ -62,19 +62,16 @@
         },
 {
   "type": "python",
-  "style": "powerline",
-  "background": "#e69875",             
-  "foreground": "#111111",               
-  "powerline_symbol": "\ue0b0",
+  "style": "plain",
+  "foreground": "#e69875",           
   "properties": {
-    "display_mode": "environment",       
-    "show_virtual_env": true,
+    "display_mode": "environment",
     "fetch_virtual_env": true,
-    "home_enabled": true,
     "cache_duration": "none"
   },
-  "template": " {{ .Venv }} "
+  "template": " ({{ .Venv }}) "
 }
+
 
       ]
     },
