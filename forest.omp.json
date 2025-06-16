@@ -63,18 +63,19 @@
 {
   "type": "python",
   "style": "powerline",
-  "background": "#e69875",               
+  "background": "#e69875",             
   "foreground": "#111111",               
   "powerline_symbol": "\ue0b0",
   "properties": {
-    "display_mode": "environment",      
+    "display_mode": "environment",       
     "show_virtual_env": true,
     "fetch_virtual_env": true,
     "home_enabled": true,
     "cache_duration": "none"
   },
-  "template": " \ue235 <#111111>{{ .Venv }}</> "
+  "template": " {{ .Venv }} "
 }
+
       ]
     },
     {
